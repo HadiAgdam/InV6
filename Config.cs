@@ -14,7 +14,7 @@ namespace Invisix
 
         public Config()
         {
-            serverUrl = ""; // load from encrypted file
+            serverUrl = "http://127.0.0.1:5000/"; // load from encrypted file
             encryptionKey = "09123456781jash29iop98123esjneub"; // 32 byte
             encryptionIv = "16-byte-IV-here!"; // 16 byte
         }

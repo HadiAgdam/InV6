@@ -7,7 +7,10 @@ namespace Invisix
     {
         public override void execute(Dictionary<string, string> arguments)
         {
-            TerminatorService.add(arguments["program"]);
+            if (arguments["mode"] == "add")
+                TerminatorService.add(arguments["program"]);
+            else if (arguments["mode"] == "remove")
+                TerminatorService.remove(arguments["program"]);
         }
     }
 }

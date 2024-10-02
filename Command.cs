@@ -9,6 +9,6 @@ namespace Invisix
     class Command
     {
         public string command { get; set; }
-        public Dictionary<string, string> args;
+        public Dictionary<string, string> args { get; set; }
     }
 }
